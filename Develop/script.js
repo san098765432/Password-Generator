@@ -4,24 +4,6 @@ var generateBtn = document.querySelector("#generate");
 
 
 
-
-// Questions to prompt the user 
-
-How long would you like your password to be? The password must be between 8 and 128 characters
-
- Would you like to include lowercase letters?
- 
- Would you like to include uppercase letters?
- 
- Would you like to include numbers?
- 
- Would you like to include any special characters?
-
-
-
-
-
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -32,9 +14,62 @@ function writePassword() {
 }
 
 
-
-
-
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
+// Variable Declaration 
+
+let lowercaseLetters ="abcdefghijklmnopqrstuvwxyz";
+
+let uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let numbers = "0123456789";
+
+let specialCharacters= "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+
+
+
+// Calling the function 
+
+function generatePassword() {
+
+if (number < 8 || number > 128) {
+console.log ('Please try again! The password must contain a minimum of 8 characters and a maximum of 128 characters');
+}
+
+else if ( number >= 8 || number <== 128) 
+  var lowercaseLetters = confirm("Would you like to include lowerCase characters in your password?");
+  if (lowercaseLetters == true) {
+
+  }
+  var uppercaseLetters = confirm("Would you like to include upperCase characters in your password?");
+  if ( uppercaseLetters == true) {
+
+  }
+  var specialCharacters = confirm("Would you like to include specialCharacters in your password?");
+  if (specialCharacters == true) {
+
+  }
+  var numbers = confirm("Would you like to include numbers in your password?");
+  if (numbers == true) {
+
+  }
+}
+}
+
+
+
+
+
+  else (
+    !lowercaseLetters ||
+    !uppercaseLetters ||
+    !specialCharacters ||
+    ! numbers 
+  ) ("Please note, the password must include at least one of the following: an upper case letter, a lower case letter, special character or number in order to be valid ");
+    generatePassword");
+  }
+
