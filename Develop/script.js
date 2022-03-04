@@ -32,15 +32,20 @@ let specialCharacters= "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
 
 
+
 // Calling the function 
 
 function generatePassword() {
+
+let number= prompt (
+  "How long would you like your password to be? Please note, it must be between 8 - 128 characters"
+);
 
 if (number < 8 || number > 128) {
 console.log ('Please try again! The password must contain a minimum of 8 characters and a maximum of 128 characters');
 }
 
-else if ( number >= 8 || number <== 128) 
+else if ( number >= 8 || number <= 128) 
   var lowercaseLetters = confirm("Would you like to include lowerCase characters in your password?");
   if (lowercaseLetters == true) {
 
@@ -58,7 +63,6 @@ else if ( number >= 8 || number <== 128)
 
   }
 }
-}
 
 
 
@@ -68,8 +72,9 @@ else if ( number >= 8 || number <== 128)
     !lowercaseLetters ||
     !uppercaseLetters ||
     !specialCharacters ||
-    ! numbers 
-  ) ("Please note, the password must include at least one of the following: an upper case letter, a lower case letter, special character or number in order to be valid ");
-    generatePassword");
-  }
+    !numbers ) 
+  {
+    console.log ("Please note, the password must include at least one of the following: an upper case letter, a lower case letter, special character or number in order to be valid ");
+  generatePassword"); 
+  } 
 
