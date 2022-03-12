@@ -20,10 +20,6 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-
-
-
-
 // Variable Declaration 
 
 var lowercaseLetters ="abcdefghijklmnopqrstuvwxyz";
@@ -39,7 +35,7 @@ var specialCharacters= "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
 
 
-// Calling the function 
+// Declaring the function 
 
 function generatePassword () {
 
@@ -50,22 +46,14 @@ var length= prompt (
 if (length < 8 || length > 128) {
 alert ("Please try again! The password must contain a minimum of 8 characters and a maximum of 128 characters");
 
-}else ( length >= 8 || length <= 128) {
-  alert ("Would you like to include lower case characters in your password? Select yes or no");
-  if (lowercaseLetters = true || false) 
-
-} var uppercaseLetters = prompt ("Would you like to include upper case characters in your password? select yes or no"); 
-  if (uppercaseLetters = true || false)
-
-  var specialCharacters= prompt ("Would you like to include special characters in your password?select yes or no");
-  if (specialCharacters = true || false)
-
-  var number = prompt ("Would you like to include numbers in your password?select yes or no");
-  if (number = true || false)
-
+}else if ( length >= 8 || length <= 128) {
+var lowercaseLetters= prompt ("Would you like to include lower case characters in your password? Select yes or no");
+var uppercaseLetters = prompt ("Would you like to include upper case characters in your password? select yes or no"); 
+var specialCharacters= prompt ("Would you like to include special characters in your password?select yes or no");
+var number = prompt ("Would you like to include numbers in your password?select yes or no");
 
 // Option if neither of the minimum password requirements are selected 
-else (
+}else (
     !lowercaseLetters ||
     !uppercaseLetters ||
     !specialCharacters ||
@@ -74,3 +62,4 @@ else (
  alert ("Please note, the password must include at least one of the following: an upper case letter, a lower case letter, special character or number in order to be valid "); 
   }
 } 
+
