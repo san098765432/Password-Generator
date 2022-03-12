@@ -20,13 +20,19 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
+
+
+
+
 // Variable Declaration 
 
 var lowercaseLetters ="abcdefghijklmnopqrstuvwxyz";
 
 var uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-var numbers = "0123456789";
+var number = "0123456789";
+
+var length = "0123456789";
 
 var specialCharacters= "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
@@ -35,47 +41,36 @@ var specialCharacters= "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
 // Calling the function 
 
-function generatePassword() {
+function generatePassword () {
 
-var number= prompt (
+var length= prompt (
   "How long would you like your password to be? Please note, it must be between 8 - 128 characters"
 );
 
-if (number < 8 || number > 128) {
-console.log ('Please try again! The password must contain a minimum of 8 characters and a maximum of 128 characters');
-}
+if (length < 8 || length > 128) {
+alert ("Please try again! The password must contain a minimum of 8 characters and a maximum of 128 characters");
 
-else if ( number >= 8 || number <= 128) 
-  var lowercaseLetters = confirm("Would you like to include lowerCase characters in your password? select yes or no");
-  if (lowercaseLetters == true) {
-    console .log ( )
+}else ( length >= 8 || length <= 128) {
+  alert ("Would you like to include lower case characters in your password? Select yes or no");
+  if (lowercaseLetters = true || false) 
 
-  }
-  var uppercaseLetters = confirm("Would you like to include upperCase characters in your password? select yes or no");
-  if ( uppercaseLetters == true) {
-    console.log ()
+} var uppercaseLetters = prompt ("Would you like to include upper case characters in your password? select yes or no"); 
+  if (uppercaseLetters = true || false)
 
-  }
-  var specialCharacters = confirm("Would you like to include specialCharacters in your password?select yes or no");
-  if (specialCharacters == true) {
-console.log ()
-  }
-  var numbers = confirm("Would you like to include numbers in your password?select yes or no");
-  if (numbers == true) {
-console.log ()
-  }
-}
+  var specialCharacters= prompt ("Would you like to include special characters in your password?select yes or no");
+  if (specialCharacters = true || false)
 
+  var number = prompt ("Would you like to include numbers in your password?select yes or no");
+  if (number = true || false)
 
 
 // Option if neither of the minimum password requirements are selected 
-
-  else (
+else (
     !lowercaseLetters ||
     !uppercaseLetters ||
     !specialCharacters ||
-    !numbers ) 
+    !number ) 
   {
- console.log ("Please note, the password must include at least one of the following: an upper case letter, a lower case letter, special character or number in order to be valid "); 
-  } 
-
+ alert ("Please note, the password must include at least one of the following: an upper case letter, a lower case letter, special character or number in order to be valid "); 
+  }
+} 
