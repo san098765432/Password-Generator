@@ -35,4 +35,8 @@ THEN the password is either displayed in an alert or written to the page
 https://github.com/san098765432/week3homework 
 
 # LINK TO DEPLOYED APPLICATION 
+<<<<<<< HEAD
  https://san098765432.github.io/week3homework
+=======
+ https://san098765432.github.io/week3homework/ 
+>>>>>>> 81cca612164c69e2f92c01373db4c92f678db7fc
