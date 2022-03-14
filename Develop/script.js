@@ -1,5 +1,5 @@
+// Variable Declaration 
 
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 var lowercaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -14,6 +14,7 @@ var specialCharacters= [ "!", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", 
 
 var userChoice = [];
 var finalPw;
+
 
 // Declaring the function 
 
@@ -97,7 +98,6 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-// Variable Declaration 
 
 
 
