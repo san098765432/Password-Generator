@@ -1,7 +1,7 @@
 # Week3Homework
 
 # DESCRIPTION
-I want to create a randomly generated password which provides a high level of security. It must meet specific criteria in order to be effective.
+I want to create a randomly generated password which provides a high level of security. 
 # USER STORY
 
 AS AN employee with access to sensitive data
