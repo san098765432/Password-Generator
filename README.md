@@ -1,4 +1,4 @@
-# Week3Homework
+# Password Generator
 
 # DESCRIPTION
 I want to create a randomly generated password which provides a high level of security. 
@@ -32,6 +32,6 @@ THEN the password is either displayed in an alert or written to the page
 </figure>
 
 # GIT HUB URL
-https://github.com/san098765432/week3homework 
+
 
 # LINK TO DEPLOYED APPLICATION 
