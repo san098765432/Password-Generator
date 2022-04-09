@@ -32,6 +32,6 @@ THEN the password is either displayed in an alert or written to the page
 </figure>
 
 # GIT HUB URL
-
+https://github.com/san098765432/Password-Generator
 
 # LINK TO DEPLOYED APPLICATION 
